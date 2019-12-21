@@ -35,7 +35,5 @@ public class Draw2D extends View {
 
         paint.setColor(Color.GRAY);
         paint.setTextSize(27);
-        String str2Rotate = "Лучик солнца";
-        canvas.rotate(-45, x+);
     }
 }

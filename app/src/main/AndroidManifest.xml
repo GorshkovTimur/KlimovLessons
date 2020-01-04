@@ -10,18 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-
-        <activity android:name=".webview.BrowserActivity">
+        <activity android:name=".keyactivity.KeyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Animation.AnimationActivity">
+        <activity android:name=".webview.BrowserActivity">
 
         </activity>
-        <activity android:name=".GraphicActivity"></activity>
+        <activity android:name=".Animation.AnimationActivity"></activity>
+        <activity android:name=".GraphicActivity" />
     </application>
+
     <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>

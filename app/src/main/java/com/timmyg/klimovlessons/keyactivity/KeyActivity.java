@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
@@ -46,11 +47,8 @@ public class KeyActivity extends AppCompatActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        switch (keyCode) {
-            case KeyEvent.KEYCODE_VOLUME_UP:
-                Toast.makeText(this, "Повышаешь громкость", Toast.LENGTH_SHORT).show();
-                return false;
-        }
-        return super.onKeyDown(keyCode, event);
+        Integer code = keyCode;
+        Toast.makeText(this,code.toString(), Toast.LENGTH_SHORT).show();
+        return true;
     }
 }

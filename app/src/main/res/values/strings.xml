@@ -7,4 +7,8 @@
     <string name="hour">Стрелка</string>
     <string name="text">Hello</string>
     <string name="SYSTEM">system</string>
+    <string name="wifisummury">wi-fi_summary</string>
+    <string name="wifi_title">wifi_title</string>
+    <string name="hints_summary">hints_summary</string>
+    <string name="hints_title">hints_title</string>
 </resources>

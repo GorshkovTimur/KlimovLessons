@@ -10,19 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".listview.DetailViewActivity"></activity>
-        <activity android:name=".listview.ListViewActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".camera.CameraActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".listview.DetailViewActivity" />
+        <activity android:name=".listview.ListViewActivity">
 
-        <activity android:name=".locale.LocaleActivity"/>
-
-
-
+        </activity>
+        <activity android:name=".locale.LocaleActivity" />
         <activity android:name=".keyactivity.KeyActivity" />
         <activity android:name=".webview.BrowserActivity" />
         <activity android:name=".Animation.AnimationActivity" />

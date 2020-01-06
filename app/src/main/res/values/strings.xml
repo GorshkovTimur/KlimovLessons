@@ -6,4 +6,5 @@
     <string name="clock">Часы</string>
     <string name="hour">Стрелка</string>
     <string name="text">Hello</string>
+    <string name="SYSTEM">system</string>
 </resources>

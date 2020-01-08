@@ -4,11 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.timmyg.klimovlessons.locale.LocaleActivity">
+    tools:context="com.timmyg.klimovlessons.notepad.NotepadActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="text"/>
+    <EditText
+        android:id="@+id/notepad_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        />
+
 
 </LinearLayout>

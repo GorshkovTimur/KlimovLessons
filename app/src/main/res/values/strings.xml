@@ -1,14 +1,20 @@
 <resources>
-    <string name="app_name">Simple Paint</string>
-    <string name="sun">Солнце</string>
-    <string name="grass">Трава</string>
-    <string name="sky">Небо</string>
-    <string name="clock">Часы</string>
-    <string name="hour">Стрелка</string>
-    <string name="text">Hello</string>
-    <string name="SYSTEM">system</string>
-    <string name="wifisummury">wi-fi_summary</string>
-    <string name="wifi_title">wifi_title</string>
-    <string name="hints_summary">hints_summary</string>
-    <string name="hints_title">hints_title</string>
+    <string name="app_name">Notepad</string>
+    <string name="action_open">Открыть</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_settings">Настройки</string>
+    <string name="pref_openmode">Режим открытия</string>
+    <string name="pref_color">Цвет</string>
+    <string name="pref_color_black">Черный цвет</string>
+    <string name="pref_color_red">Красный цвет</string>
+    <string name="pref_color_green">Зеленый цвет</string>
+    <string name="pref_color_blue">Синий цвет</string>
+    <string name="pref_size">Размер</string>
+    <string name="pref_style">Стиль</string>
+    <string name="pref_style_regular">Нормальный</string>
+    <string name="pref_style_bold">Полужирный</string>
+    <string name="pref_style_italic">Курсив</string>
+
 </resources>
+
+

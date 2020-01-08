@@ -8,7 +8,7 @@
         android:id="@+id/sky"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:contentDescription="@string/sky"
+        android:contentDescription="sky"
         android:src="@drawable/sky" />
 
     <ImageView
@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:contentDescription="@string/sun"
+        android:contentDescription="sun"
         android:scaleType="fitCenter"
         android:src="@drawable/sun" />
 
@@ -25,7 +25,7 @@
         android:layout_width="fill_parent"
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
-        android:contentDescription="@string/grass"
+        android:contentDescription="grass"
         android:src="@drawable/grass" />
 
 </RelativeLayout>

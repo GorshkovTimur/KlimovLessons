@@ -4,14 +4,14 @@
     <CheckBoxPreference
         android:defaultValue="true"
         android:key="wifi"
-        android:summary="@string/wifisummury"
-        android:title="@string/wifi_title"/>
+        android:summary="wifisummury"
+        android:title="wifi_title"/>
 
     <CheckBoxPreference
         android:defaultValue="true"
         android:key="hints"
-        android:summary="@string/hints_summary"
-        android:title="@string/hints_title"/>
+        android:summary="hints_summary"
+        android:title="hints_title"/>
 
     <EditTextPreference
         android:key="text_size"

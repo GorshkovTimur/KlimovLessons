@@ -8,20 +8,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true">
-        <activity android:name=".preference.PreferencesActivity">
+        <activity android:name=".notepad.NotepadSettingsActivity"></activity>
+        <activity android:name=".notepad.NotepadActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".camera.CameraActivity">
-
-        </activity>
+        <activity android:name=".preference.PreferencesActivity"></activity>
+        <activity android:name=".camera.CameraActivity" />
         <activity android:name=".listview.DetailViewActivity" />
-        <activity android:name=".listview.ListViewActivity"></activity>
+        <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".locale.LocaleActivity" />
         <activity android:name=".keyactivity.KeyActivity" />
         <activity android:name=".webview.BrowserActivity" />

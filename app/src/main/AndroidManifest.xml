@@ -10,15 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true">
-        <activity android:name=".notepad.NotepadSettingsActivity"></activity>
-        <activity android:name=".notepad.NotepadActivity">
+        <activity android:name=".googlemap.GeoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".preference.PreferencesActivity"></activity>
+        <activity android:name=".notepad.NotepadSettingsActivity" />
+        <activity android:name=".notepad.NotepadActivity">
+
+        </activity>
+        <activity android:name=".preference.PreferencesActivity" />
         <activity android:name=".camera.CameraActivity" />
         <activity android:name=".listview.DetailViewActivity" />
         <activity android:name=".listview.ListViewActivity" />

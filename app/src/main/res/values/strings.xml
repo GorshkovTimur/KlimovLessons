@@ -14,6 +14,7 @@
     <string name="pref_style_regular">Нормальный</string>
     <string name="pref_style_bold">Полужирный</string>
     <string name="pref_style_italic">Курсив</string>
+    <string name="title_activity_google_maps">Map</string>
 
 </resources>
 

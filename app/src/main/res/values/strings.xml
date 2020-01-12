@@ -16,6 +16,13 @@
     <string name="pref_style_italic">Курсив</string>
     <string name="title_activity_google_maps">Map</string>
 
+    <string-array name="cats">
+        <item>Просто кот</item>
+        <item>Рыжик - рыжий кот</item>
+        <item>Барсик болеет за Барселону</item>
+        <item>Мурзик выписывает Мурзилку</item>
+    </string-array>
+
 </resources>
 
 

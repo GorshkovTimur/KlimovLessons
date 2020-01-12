@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true">
+        <activity android:name=".fragment.FragmentSecondActivity"></activity>
         <activity android:name=".fragment.FragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,10 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".broadcasrt.TimingBroadcastActivity">
-
-        </activity>
-        <activity android:name=".broadcasrt.BroadcastActivity"></activity>
+        <activity android:name=".broadcasrt.TimingBroadcastActivity"></activity>
+        <activity android:name=".broadcasrt.BroadcastActivity" />
         <activity
             android:name=".googlemap.GoogleMapsActivity"
             android:label="@string/title_activity_google_maps" />
@@ -54,8 +53,8 @@
             android:enabled="true"
             android:exported="true" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

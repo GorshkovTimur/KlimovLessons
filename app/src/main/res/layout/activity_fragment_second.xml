@@ -10,14 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.timmyg.klimovlessons.fragment.FragmentActivity">
+    tools:context="com.timmyg.klimovlessons.fragment.FragmentSecondActivity">
 
     <fragment
-        android:id="@+id/fragment"
-        android:name="com.timmyg.klimovlessons.fragment.Fragment1"
+        android:id="@+id/fragment2"
+        android:name="com.timmyg.klimovlessons.fragment.Fragment2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
-
 
 </LinearLayout>

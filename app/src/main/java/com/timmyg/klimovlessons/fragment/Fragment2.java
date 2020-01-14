@@ -19,6 +19,9 @@ public class Fragment2 extends Fragment {
     private ImageView catImageView;
     private String[] catDescription;
 
+    public static final String BUTTON_INDEX = "button_index";
+    public static final int BUTTON_INDEX_DEAFAULT = -1;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -28,6 +31,12 @@ public class Fragment2 extends Fragment {
         catImageView = rootView.findViewById(R.id.imageView);
 
         catDescription = getResources().getStringArray(R.array.cats);
+
+        Bundle args = getArguments();
+        int buttonIndex = args != null ? args.getInt(BUTTON_INDEX, BUTTON_INDEX_DEAFAULT)
+                : BUTTON_INDEX_DEAFAULT;
+        if (buttonIndex != BUTTON_INDEX_DEAFAULT)
+            setDescription(buttonIndex);
 
         return rootView;
     }

@@ -28,7 +28,7 @@ public class MyDIalogFragment extends DialogFragment {
                 .setItems(R.array.cats, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        (AlertActivity)getActivity().click
+
                     }
                 });
 

@@ -10,17 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true">
-        <activity android:name=".alertdialog.AlertActivity">
+        <activity android:name=".listfragment.ListFragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".fragment.FragmentSecondActivity" />
-        <activity android:name=".fragment.FragmentActivity">
+        <activity android:name=".alertdialog.AlertActivity">
 
         </activity>
+        <activity android:name=".fragment.FragmentSecondActivity" />
+        <activity android:name=".fragment.FragmentActivity"></activity>
         <activity android:name=".broadcasrt.TimingBroadcastActivity" />
         <activity android:name=".broadcasrt.BroadcastActivity" />
         <activity
@@ -56,8 +57,8 @@
             android:enabled="true"
             android:exported="true" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

@@ -10,18 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true">
-        <activity android:name=".listfragment.ListFragmentActivity">
+        <activity android:name=".sqlite.EditorActivity"></activity>
+        <activity
+            android:name=".sqlite.BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".alertdialog.AlertActivity">
+        <activity android:name=".listfragment.ListFragmentActivity">
 
         </activity>
+        <activity android:name=".alertdialog.AlertActivity" />
         <activity android:name=".fragment.FragmentSecondActivity" />
-        <activity android:name=".fragment.FragmentActivity"></activity>
+        <activity android:name=".fragment.FragmentActivity" />
         <activity android:name=".broadcasrt.TimingBroadcastActivity" />
         <activity android:name=".broadcasrt.BroadcastActivity" />
         <activity

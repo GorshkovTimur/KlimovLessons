@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.timmyg.klimovlessons.sqlite.EditorActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <TextView
+        style="@style/textstyle"
+        android:text="Общая информация" />
+
+    <LinearLayout
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingLeft="4dp" />
+
+    <EditText
+        android:id="@+id/edut_guest_name"
+        style="@style/textstyle"
+        android:hint="Имя"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/edit_guest_city"
+        style="@style/textstyle"
+        android:hint="Город"
+        android:inputType="textCapWords" />
+
+    </LinearLayout>
+
+<LinearLayout
+android:id="@+id/container_gender"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+    <TextView
+        style="@style/textstyle"
+        android:text="Пол" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingRight="16dp"
+        android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textstyle"
+            android:text="Возраст"/>
+
+        <EditText
+            android:id="@+id/edit_guest_age"
+            style="@style/textstyle"
+            android:hint="Возраст"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:onClick="saveDatabase"/>
+
+
+    </LinearLayout>

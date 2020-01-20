@@ -97,6 +97,6 @@ public class EditorActivity extends AppCompatActivity {
             Toast.makeText(this, "Гость заведён под номером: " + newRowId, Toast.LENGTH_SHORT).show();
         }
         finish();
-        
+
     }
 }

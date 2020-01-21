@@ -10,21 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true">
-        <activity android:name=".secondmetr.SecondmeterActivity">
+        <activity android:name=".myview.CustomViewActivity">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".textomcircle.TextCirlceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".secondmetr.SecondmeterActivity"></activity>
         <activity android:name=".sqlite.EditorActivity" />
         <activity
             android:name=".sqlite.BasicActivity"
             android:label="@string/title_activity_basic"
-            android:theme="@style/NoActionBar">
-
-        </activity>
-        <activity android:name=".listfragment.ListFragmentActivity"></activity>
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".listfragment.ListFragmentActivity" />
         <activity android:name=".alertdialog.AlertActivity" />
         <activity android:name=".fragment.FragmentSecondActivity" />
         <activity android:name=".fragment.FragmentActivity" />

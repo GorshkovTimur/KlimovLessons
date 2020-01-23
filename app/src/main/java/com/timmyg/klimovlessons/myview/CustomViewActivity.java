@@ -23,7 +23,7 @@ public class CustomViewActivity extends Activity {
         customTitleSupported = requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.activity_custom_view);
         customTitleBar("Лох", "Пидр");
-               TextView title = (TextView) getWindow()
+               TextView title = getWindow()
                 .findViewById(android.R.id.title);
         if (title != null) {
             // цвет в заголовке

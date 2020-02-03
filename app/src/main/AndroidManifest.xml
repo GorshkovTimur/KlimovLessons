@@ -17,6 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".filemanager.FileManagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,6 +61,7 @@
         <activity
             android:name=".googlemap.GoogleMapsActivity"
             android:label="@string/title_activity_google_maps" />
+        <activity android:name=".googlemap.GeoActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -68,7 +70,6 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <activity android:name=".googlemap.GeoActivity" />
         <activity android:name=".notepad.NotepadSettingsActivity" />
         <activity android:name=".notepad.NotepadActivity" />
         <activity android:name=".preference.PreferencesActivity" />
@@ -80,19 +81,28 @@
         <activity android:name=".webview.BrowserActivity" />
         <activity android:name=".Animation.AnimationActivity" />
         <activity android:name=".GraphicActivity" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <receiver android:name=".widget.DaysAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/days_app_widget_info" />
+        </receiver>
 
         <receiver
             android:name=".broadcasrt.MessageReciever"
             android:enabled="true"
             android:exported="true" />
     </application>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

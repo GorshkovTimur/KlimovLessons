@@ -11,11 +11,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".network.NetworkActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity android:name=".gps.GPSActivity">
@@ -67,7 +63,13 @@
         <activity android:name=".broadcasrt.BroadcastActivity" />
         <activity
             android:name=".googlemap.GoogleMapsActivity"
-            android:label="@string/title_activity_google_maps" />
+            android:label="@string/title_activity_google_maps" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".googlemap.GeoActivity" />
         <activity android:name=".notepad.NotepadSettingsActivity" />
         <!--
@@ -91,11 +93,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-
-        <receiver
-            android:name=".network.NetworkReceiver"
-            android:enabled="true"
-            android:exported="true"></receiver>
 
         <receiver android:name=".widget.DaysAppWidget">
             <intent-filter>

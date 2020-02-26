@@ -29,6 +29,10 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="hello_world">Hello world!</string>
     <string name="add_widget">Add widget</string>
+    <string name="play">play</string>
+    <string name="play_pause">play/pause</string>
+    <string name="stop">stop</string>
+    <string name="next">next</string>
     <string-array name="cats">
         <item>Просто кот</item>
         <item>Рыжик - рыжий кот</item>

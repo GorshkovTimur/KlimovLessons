@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.timmyg.klimovlessons">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".network.NetworkActivity">
+        <activity android:name=".mediaplayer.PlayerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
+        <activity android:name=".network.NetworkActivity"></activity>
         <activity android:name=".gps.GPSActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,12 +71,7 @@
         <activity android:name=".broadcasrt.BroadcastActivity" />
         <activity
             android:name=".googlemap.GoogleMapsActivity"
-            android:label="@string/title_activity_google_maps" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            android:label="@string/title_activity_google_maps">
         </activity>
         <activity android:name=".googlemap.GeoActivity" />
         <activity android:name=".notepad.NotepadSettingsActivity" />
@@ -90,6 +93,7 @@
         <activity android:name=".webview.BrowserActivity" />
         <activity android:name=".Animation.AnimationActivity" />
         <activity android:name=".GraphicActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -108,9 +112,5 @@
             android:enabled="true"
             android:exported="true" />
     </application>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
